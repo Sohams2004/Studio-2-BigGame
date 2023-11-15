@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Console : MonoBehaviour
+public class ConsoleInteractions : MonoBehaviour
 {
     [SerializeField] GameObject consoleText;
     [SerializeField] bool consoleActivated;

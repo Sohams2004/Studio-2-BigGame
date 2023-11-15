@@ -11,11 +11,11 @@ public class Player_Movement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D playerRb;
 
-    [SerializeField] private bool jumpLimit = false;
+    //[SerializeField] private bool jumpLimit = false;
 
     private void FixedUpdate()
     {
-        
+
     }
 
     /*public void Jump()
@@ -28,7 +28,6 @@ public class Player_Movement : MonoBehaviour
             playerRb.velocity = new Vector2(playerRb.velocity.x, initialJumpVelocity);
             jumpLimit = true;
         }
-    }*/
 
     private void OnCollisionStay2D(Collision2D other)
     {
@@ -36,7 +35,8 @@ public class Player_Movement : MonoBehaviour
         {
             jumpLimit = false;
         }
-    }
+    }*/
+
 
     private void Update()
     {
