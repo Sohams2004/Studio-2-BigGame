@@ -994,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!58 &1302704922
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1091,11 +1091,11 @@ Transform:
   m_GameObject: {fileID: 1302704921}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3, y: -3.14, z: 0}
+  m_LocalPosition: {x: 0.487, y: -0.352, z: 0}
   m_LocalScale: {x: 0.50503, y: 0.50503, z: 0.50503}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2783283627724123864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &1302704925
 LineRenderer:
@@ -1169,7 +1169,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.34413192, g: 0.7313506, b: 0.9433962, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1194,7 +1194,7 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 20
@@ -1220,7 +1220,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.20031995
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1534,6 +1534,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6192743165014661606, guid: 8c6c0fc56b3fc0345824500e5f18c22f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 765456527}
+    - targetCorrespondingSourceObject: {fileID: 6192743165014661606, guid: 8c6c0fc56b3fc0345824500e5f18c22f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1302704924}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8999990145463324001, guid: 8c6c0fc56b3fc0345824500e5f18c22f, type: 3}
       insertIndex: -1
@@ -1572,6 +1575,5 @@ SceneRoots:
   - {fileID: 929960963}
   - {fileID: 1127359503}
   - {fileID: 2783283627724123863}
-  - {fileID: 1302704924}
   - {fileID: 1131604562}
   - {fileID: 895604401}
