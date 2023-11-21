@@ -9,23 +9,30 @@ public class SwitchDoor : MonoBehaviour
     [SerializeField] GameObject door;
     // Start is called before the first frame update
     // Update is called once per frame
+    bool opened;
+    int counts;
+        
+   public void CountingButtons(int number)
+            {
 
-    private void Update()
-    {
-            foreach (GameObject button in buttons)
+            if (counts <= buttons.Length && counts >=0 )
             {
-            if (button.GetComponent<ChargeConsole>().isActive == false) 
-            {
-                door.active = true; return; 
+                counts += number;
+            Debug.Log("added" + number);
             }
-            else if (button.GetComponent<ChargeConsole>().isActive == true)
-            {
-                door.active = false;
-
-            }
-
+            if (counts == buttons.Length)
+        {
+            Debug.Log("AND OPPPPEEEEEEN");
+            gameObject.SetActive(false);
+        }
+            else
+        {
+            gameObject.SetActive(true);
         }
 
     }
+
+
+
 
 }
