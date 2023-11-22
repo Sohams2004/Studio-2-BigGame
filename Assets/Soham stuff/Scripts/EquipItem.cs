@@ -38,7 +38,7 @@ public class EquipItem : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D other)
+    /*private void OnCollisionStay2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Item"))
         {
@@ -56,15 +56,15 @@ public class EquipItem : MonoBehaviour
         }
     }
 
-    /*void DetectItem()
+    void DetectItem()
     {
         var itemCheck = Physics2D.OverlapCircleAll(itemDetect.position, radius)
-    }*/
+    }
 
     private void OnCollisionExit2D(Collision2D other)
     {
         isItem = false;
-    }
+    }*/
 
     private void Update()
     {

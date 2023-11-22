@@ -8,6 +8,8 @@ public class CollectKeyFragments : MonoBehaviour
 
     [SerializeField] bool keyFragment1, keyFragment2, keyFragment3;
 
+    [SerializeField] int keyCollected;
+
     private void Start()
     {
         keyFragmentSpawn = FindObjectOfType<KeyFragmentSpawn>();
@@ -21,25 +23,9 @@ public class CollectKeyFragments : MonoBehaviour
 
             keyFragmentSpawn.activeFragment = true;
 
-            keyFragment1 = true; 
-        }    
-        
-        if(other.gameObject.CompareTag("Player") && keyFragment1)
-        {
-            gameObject.SetActive(false);
+            keyFragment1 = true;
 
-            keyFragmentSpawn.activeFragment = true;
-
-            keyFragment2 = true; 
-        }
-        
-        if(other.gameObject.CompareTag("Player") && keyFragment1 && keyFragment2)
-        {
-            gameObject.SetActive(false);
-
-            keyFragmentSpawn.activeFragment = true;
-
-            keyFragment3 = true; 
+            keyCollected++;
         }    
     }
 }
