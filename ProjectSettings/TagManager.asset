@@ -10,6 +10,9 @@ TagManager:
   - Red Console
   - Item
   - ElectricBot
+  - pet
+  - Pet
+  - Console
   layers:
   - Default
   - TransparentFX

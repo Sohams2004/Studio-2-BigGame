@@ -14,6 +14,7 @@ public class CameraControl : MonoBehaviour
         Cursor.visible = false;
 
         player = GetComponent<Transform>();
+        Application.targetFrameRate= 60;
     }
 
     void CamControl()
