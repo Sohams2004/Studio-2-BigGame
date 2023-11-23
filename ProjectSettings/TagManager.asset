@@ -10,6 +10,7 @@ TagManager:
   - Red Console
   - Item
   - ElectricBot
+  - Followers
   layers:
   - Default
   - TransparentFX
