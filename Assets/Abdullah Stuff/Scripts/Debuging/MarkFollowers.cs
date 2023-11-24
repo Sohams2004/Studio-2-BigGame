@@ -12,7 +12,7 @@ public class MarkFollowers : MonoBehaviour
     public static List<GameObject> robotsList = new List<GameObject>();
 
     public float lineThicknes = 2.0f;
-    public float radius=2f;
+    
     public float radiusThickness = 2f;
     [SerializeField] private GameObject sphereProp;
     GameObject newSphere;
@@ -35,8 +35,10 @@ public class MarkFollowers : MonoBehaviour
 
 
         }
-        radius = Mathf.Abs(newSphere.transform.position.x - transform.position.x);
+        
+        var radius = GetComponent<SphereCollider>().radius;
         newSphere.transform.position = transform.position + Vector3.right * radius;
+        radius *= transform.lossyScale.magnitude;
         Handles.color = new Color(1, 1, 1, 0.1f);
         Handles.DrawSolidDisc(transform.position, transform.up, radius);
         Handles.color = new Color(1, 1, 0, 0.1f);
@@ -44,11 +46,11 @@ public class MarkFollowers : MonoBehaviour
 
         if (transform.localScale.z !=1)
         {
-            gameObject.GetComponent<SphereCollider>().radius = radius;
+           // gameObject.GetComponent<SphereCollider>().radius = radius;
 
 
         }
-        else gameObject.GetComponent<SphereCollider>().radius = radius;
+        else //gameObject.GetComponent<SphereCollider>().radius = radius;
 
 
         foreach (GameObject robotsFollowers in robotsList)

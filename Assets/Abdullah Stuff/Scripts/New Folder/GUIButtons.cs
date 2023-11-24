@@ -8,16 +8,14 @@ public class GUIButtons : MonoBehaviour
     /// options
     /// Blahh
     /// exist
-
-    [SerializeField] private string start= "Start";
     
     private void OnGUI()
     {
 
-        var position = new Rect(0, 0, 200, 200);
+        var position = new Rect(0, 0, 50, 50);
 
         GUI.Button(position, "Start");
-        position.y+= 20;
+        position.y+= 60;
         GUI.Label(position, "Options");
         position.y += 20;
         GUI.Label(position, "Blahh");
