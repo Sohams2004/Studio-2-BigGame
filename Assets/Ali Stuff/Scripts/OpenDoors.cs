@@ -17,24 +17,26 @@ public class OpenDoors : MonoBehaviour
         
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if(other.tag == "Player")
-    //    {
-    //        anim.SetTrigger("OpenDoor");
-    //    }
-    //}
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        GameObject collisionGameObject = collision.gameObject;
-
-        if (collisionGameObject.tag == "Player")
+        if(other.tag == "Player")
         {
-            
             Debug.Log ("Door1") ;
             anim.SetTrigger("OpenDoor");
+            
         }
     }
+
+   //private void OnCollisionEnter(Collision collision)
+   //{
+   //    GameObject collisionGameObject = collision.gameObject;
+
+   //    if (collisionGameObject.tag == "Player")
+   //    {
+   //        
+   //        Debug.Log ("Door1") ;
+   //        anim.SetTrigger("OpenDoor");
+   //    }
+   //}
 
 }
