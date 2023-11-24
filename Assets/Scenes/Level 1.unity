@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 144285482}
   - component: {fileID: 144285481}
   - component: {fileID: 144285485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1704,8 +1704,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 96.341415, y: 4.6604643, z: 2.476478}
-  m_Center: {x: 30.701359, y: 2.3302321, z: 0.031676292}
+  m_Size: {x: 57.24269, y: 4.6604643, z: 1.225828}
+  m_Center: {x: 27.64117, y: 2.3302321, z: 0.65700144}
 --- !u!1 &154617627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,11 +2054,11 @@ Transform:
   m_GameObject: {fileID: 154617627}
   serializedVersion: 2
   m_LocalRotation: {x: -0.14621946, y: 0.14621946, z: -0.6918236, w: 0.6918236}
-  m_LocalPosition: {x: -45.51, y: 0.6010218, z: -23.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 53.339333, y: 1.1048913, z: 0.43819523}
+  m_LocalScale: {x: 1.6224022, y: 4.8593707, z: 1.1841221}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 532235004}
   m_LocalEulerAnglesHint: {x: 0, y: 23.868, z: -90}
 --- !u!95 &154617634
 Animator:
@@ -3014,7 +3014,7 @@ GameObject:
   - component: {fileID: 251258682}
   - component: {fileID: 251258681}
   - component: {fileID: 251258680}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4734,7 +4734,7 @@ GameObject:
   - component: {fileID: 400656948}
   - component: {fileID: 400656947}
   - component: {fileID: 400656946}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5219,7 +5219,8 @@ Transform:
   m_LocalPosition: {x: -1.93, y: 0, z: 4.05}
   m_LocalScale: {x: 0.05029541, y: 0.61637, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 154617633}
   m_Father: {fileID: 1319349574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &532235006
@@ -7198,7 +7199,7 @@ GameObject:
   - component: {fileID: 685477650}
   - component: {fileID: 685477649}
   - component: {fileID: 685477648}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10237,7 +10238,7 @@ GameObject:
   - component: {fileID: 1066942942}
   - component: {fileID: 1066942941}
   - component: {fileID: 1066942940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11323,7 +11324,7 @@ GameObject:
   - component: {fileID: 1134308501}
   - component: {fileID: 1134308500}
   - component: {fileID: 1134308499}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Console 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19315,6 +19316,5 @@ SceneRoots:
   - {fileID: 218776010}
   - {fileID: 159014546}
   - {fileID: 1319349574}
-  - {fileID: 154617633}
   - {fileID: 202072620}
   - {fileID: 98754226}
