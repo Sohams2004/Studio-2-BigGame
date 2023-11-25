@@ -14,7 +14,7 @@ public class PlayerRay : MonoBehaviour
     [SerializeField] TextMeshProUGUI pressEtext;
 
     //[SerializeField] Material consoleHighlightMaterial;
-    
+
 
     private void Start()
     {
@@ -23,9 +23,9 @@ public class PlayerRay : MonoBehaviour
 
     void DetectObjects()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, rayLength, consoleMask))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitObject, rayLength, consoleMask))
         {
-            Debug.Log(hitInfo.collider.gameObject.name);
+            Debug.Log(hitObject.collider.gameObject.name);
             pressEtext.enabled = true;
             //consoleHighlightMaterial.color = Color.red;
         }
