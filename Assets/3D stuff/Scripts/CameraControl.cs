@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraControl : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class CameraControl : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
+        
         player = GetComponent<Transform>();
+        Application.targetFrameRate= 60;
     }
 
     void CamControl()
