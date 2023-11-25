@@ -40,7 +40,7 @@ public class CharagedAnimation : MonoBehaviour
         switch (AnimationType)
         {
             case ValueType.isImmediate:
-                animator.SetFloat(paramatarName, consoleCharging.chargeCounter/consoleCharging.voltageNeeded);
+                animator.SetFloat(paramatarName, consoleCharging.chargeCounter);
 
                 break;
 

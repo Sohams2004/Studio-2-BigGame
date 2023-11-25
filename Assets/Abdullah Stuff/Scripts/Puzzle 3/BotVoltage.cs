@@ -11,14 +11,4 @@ public class BotVoltage : MonoBehaviour
         Voltag3,
     }
     public Voltage RobotVoltage;
-
-
-    void Start()
-    {
-        
-    }
-
-
-
-
 }
