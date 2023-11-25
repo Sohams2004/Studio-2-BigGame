@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PlayerRay : MonoBehaviour
 {
-    Ray ray;
-
     [SerializeField] float rayLength = 5f;
 
     [SerializeField] LayerMask consoleMask;
