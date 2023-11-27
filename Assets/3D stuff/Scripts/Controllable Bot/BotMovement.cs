@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class PlayerMovement3d : MonoBehaviour
+public class BotMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 10f;
 
-    [SerializeField] private Rigidbody playerRb;
+    [SerializeField] private Rigidbody botRb;
+
+    private void Start()
+    {
+        botRb = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {
