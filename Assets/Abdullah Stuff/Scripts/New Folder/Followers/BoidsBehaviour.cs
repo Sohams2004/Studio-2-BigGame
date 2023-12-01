@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[ExecuteAlways]
+//[ExecuteAlways]
 public class BoidsBehaviour : MonoBehaviour
 {
 

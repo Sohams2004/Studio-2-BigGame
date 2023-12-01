@@ -5,10 +5,13 @@ using UnityEngine.AI;
 
 public class Wait : State
 {
-    [SerializeField] bool wait;
 
     [SerializeField] NavMeshAgent agent;
 
+    private void OnEnable()
+    {
+        RunState();
+    }
     public override State RunState()
     {
         OnStay();
@@ -18,8 +21,8 @@ public class Wait : State
     void OnStay()
     {
         Debug.Log("Staying");
-        wait = true;
         agent.enabled = true;
         agent.SetDestination(transform.position);
     }
+
 }

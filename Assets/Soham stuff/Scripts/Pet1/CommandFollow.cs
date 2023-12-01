@@ -6,35 +6,30 @@ using UnityEngine.AI;
 public class CommandFollow : State
 {
     PlayerFollow playerFollow;
-
-    [SerializeField] bool followCommand;
-
-    [SerializeField] LayerMask groundMask;
-
     [SerializeField] NavMeshAgent agent;
 
     Ray cameraRay;
 
+    private void Awake()
+    {
+        playerFollow=GetComponent<PlayerFollow>();
+    }
     public override State RunState()
     {
-        if (Input.GetMouseButtonDown(0) && followCommand == false)
-        {
-            Command();
-        }
+
+      
 
         return this;
     }
 
-    void Command()
+    public void Command()
     {
         Debug.Log("Command followed");
-       
-        playerFollow.followPlayer = false;
-        followCommand = true;
-
-        cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity, groundMask))
+        
+         cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity))
         {
+            agent.stoppingDistance = 0.001f;
             agent.SetDestination(hitInfo.point);
         }
     }

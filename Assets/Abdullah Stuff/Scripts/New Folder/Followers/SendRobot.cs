@@ -42,6 +42,11 @@ public class SendRobot : MonoBehaviour
             if (findVoltage == voltageType)
             {
                 // -------Soham Script goes here---------
+
+                
+                robot.GetComponent<StateManager>().botState = BotState.commanded;
+                robot.GetComponent<CommandFollow>().Command();
+
                 // -------Soham Script goes here---------
 
                 Debug.Log("SendRobot: " + voltageType);
