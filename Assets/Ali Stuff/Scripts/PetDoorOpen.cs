@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenDoors : MonoBehaviour
+public class PetDoorOpen : MonoBehaviour
 {
      private Animator anim;
 
@@ -19,7 +19,7 @@ public class OpenDoors : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Pet")
         {
             Debug.Log ("Door1") ;
             anim.SetTrigger("OpenDoor");
