@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotVoltage : MonoBehaviour
+public abstract class State : MonoBehaviour
 {
-    public Voltage RobotVoltage;
+    public abstract State RunState();
 }

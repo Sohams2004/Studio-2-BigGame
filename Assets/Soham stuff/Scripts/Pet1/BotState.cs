@@ -2,7 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotVoltage : MonoBehaviour
+public enum BotState
 {
-    public Voltage RobotVoltage;
+    waiting,
+    followPlayer,
+    commanded,
+
+
+
 }
+

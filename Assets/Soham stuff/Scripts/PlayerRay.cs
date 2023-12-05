@@ -7,7 +7,7 @@ public class PlayerRay : MonoBehaviour
 {
     [SerializeField] float rayLength = 5f;
 
-    [SerializeField] LayerMask consoleMask;
+    [SerializeField] LayerMask ground;
 
     [SerializeField] TextMeshProUGUI pressEtext;
 
@@ -21,7 +21,7 @@ public class PlayerRay : MonoBehaviour
 
     void DetectObjects()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitObject, rayLength, consoleMask))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitObject, rayLength, ground))
         {
             Debug.Log(hitObject.collider.gameObject.name);
             pressEtext.enabled = true;
