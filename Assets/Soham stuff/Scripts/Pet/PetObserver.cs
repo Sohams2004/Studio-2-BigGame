@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotVoltage : MonoBehaviour
+//strategy
+public interface PetObserver 
 {
-    public Voltage RobotVoltage;
+    public void Observe(PetState state);
 }
