@@ -5,6 +5,7 @@ using UnityEngine;
 public class RecalRobot : MonoBehaviour
 {
     Ray cameraRay;
+    [SerializeField] Camera camera;
 
     void Update()
     {
@@ -16,7 +17,8 @@ public class RecalRobot : MonoBehaviour
 
     private void FollowPlayer()
     {
-        cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        cameraRay = camera.ScreenPointToRay(Input.mousePosition);
+        Debug.Log("casting Ray");
         Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity);
         GameObject robot = hitInfo.transform.gameObject;
 

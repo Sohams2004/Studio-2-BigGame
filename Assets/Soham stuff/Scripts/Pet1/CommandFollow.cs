@@ -7,6 +7,7 @@ public class CommandFollow : State
 {
     PlayerFollow playerFollow;
     [SerializeField] NavMeshAgent agent;
+    [SerializeField] Camera camera;
 
     Ray cameraRay;
 
@@ -26,7 +27,7 @@ public class CommandFollow : State
     {
         Debug.Log("Command followed");
         
-         cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+         cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity))
         {
             agent.stoppingDistance = 0.001f;
