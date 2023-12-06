@@ -23,7 +23,7 @@ public class RecalRobot : MonoBehaviour
         if (robot.GetComponent<StateManager>() != null)
         {
             robot.GetComponent<StateManager>().botState = BotState.followPlayer;
-            robot.GetComponent<BoidsBehaviour>().enabled = true;
+            robot.GetComponent<BotBehaviour>().enabled = true;
         }
     }
 }

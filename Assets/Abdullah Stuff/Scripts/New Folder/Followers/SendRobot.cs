@@ -50,7 +50,7 @@ public class SendRobot : MonoBehaviour
                 // -------Soham Script goes here---------
 
                 Debug.Log("SendRobot: " + voltageType);
-                robot.GetComponent<BoidsBehaviour>().enabled = false;
+                robot.GetComponent<BotBehaviour>().enabled = false;
                 return;
 
             }

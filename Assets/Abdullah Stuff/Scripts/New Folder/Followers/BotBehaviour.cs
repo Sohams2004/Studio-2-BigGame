@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 //[ExecuteAlways]
-public class BoidsBehaviour : MonoBehaviour
+public class BotBehaviour : MonoBehaviour
 {
 
     CountRobots countRobots;
