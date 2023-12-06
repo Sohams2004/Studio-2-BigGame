@@ -12903,7 +12903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: groundDrag
@@ -12912,6 +12912,10 @@ PrefabInstance:
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: orientation
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: gravityScale
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: playerHeight

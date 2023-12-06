@@ -25,7 +25,8 @@ public class PlayerMovement3d : MonoBehaviour
         //Vector3 movement = new Vector3(movementSpeed * inputx, 0, movementSpeed * inputz) * Time.deltaTime;
         //transform.Translate(movement);
 
-        playerRb.velocity = (transform.forward * inputz + transform.right * inputx) * movementSpeed * 100 * Time.deltaTime;
+        Vector3 moveDirection = (transform.forward * inputz + transform.right * inputx) * movementSpeed * 100 * Time.deltaTime;
+        playerRb.velocity = new(moveDirection.x, playerRb.velocity.y, moveDirection.z);
         //transform.Rotate((transform.up * inputx) * movementSpeed * Time.deltaTime);
     }
 
@@ -39,6 +40,11 @@ public class PlayerMovement3d : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
+        if(!isGrounded)
+        {
+            playerRb.AddForce(Physics.gravity * (gravityScale - 1) * playerRb.mass);
         }
     }
 
