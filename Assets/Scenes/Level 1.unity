@@ -4964,6 +4964,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433448878}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &466645239 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3082417812346742935, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+  m_PrefabInstance: {fileID: 3960859472992742588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &491604992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6411643742881248621, guid: b0501f8aa02739c4db2b4b717f5b1951, type: 3}
@@ -6386,6 +6391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 596183989}
+  camera: {fileID: 0}
 --- !u!114 &596183995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6426,6 +6432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9b47e45ae0c5b4986b93b18418ea7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
 --- !u!114 &596183998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19113,6 +19120,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -4.49
       objectReference: {fileID: 0}
+    - target: {fileID: 4135975132605318011, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 466645239}
     m_RemovedComponents:
     - {fileID: 1804144638659590311, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
     m_RemovedGameObjects: []
