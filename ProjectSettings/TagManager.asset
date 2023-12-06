@@ -13,6 +13,8 @@ TagManager:
   - pet
   - Pet
   - Console
+  - Coin
+  - Ground
   layers:
   - Default
   - TransparentFX
