@@ -9,6 +9,8 @@ public class CommandFollow : State
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Camera camera;
 
+    [SerializeField] GameObject pingMarker;
+
     Ray cameraRay;
 
     private void Awake()
@@ -32,6 +34,8 @@ public class CommandFollow : State
         {
             agent.stoppingDistance = 0.001f;
             agent.SetDestination(hitInfo.point);
+
+            Instantiate(pingMarker, hitInfo.point, Quaternion.identity);
         }
     }
 }
