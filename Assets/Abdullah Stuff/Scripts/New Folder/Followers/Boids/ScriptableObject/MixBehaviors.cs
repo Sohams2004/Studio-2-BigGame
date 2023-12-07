@@ -29,8 +29,9 @@ public class MixBehaviors : BoidsBehavior
                 {
                     mixedMovement.Normalize();
                     mixedMovement *= weights[i];
+
                 }
-                move = mixedMovement;
+                move += mixedMovement;
             }
         }
             return move;

@@ -31,8 +31,9 @@ public class SeperateBehavior : BoidsBehavior
 
         //average all Close entity position
         seperateMove /= avoidOthers;
+        seperateMove -= entity.transform.position;
 
-
+        seperateMove.y = 0;
         return seperateMove;
 
 

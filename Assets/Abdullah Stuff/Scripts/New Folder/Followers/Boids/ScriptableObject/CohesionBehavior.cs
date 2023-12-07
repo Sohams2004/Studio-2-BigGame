@@ -23,7 +23,7 @@ public class CohesionBehavior : BoidsBehavior
         // direction of movement from the indivsual boid
         cohesionMove -= entity.transform.position;
 
-
+        cohesionMove.y= 0;
         return cohesionMove;
 
 

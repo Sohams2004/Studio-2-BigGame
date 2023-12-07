@@ -29,7 +29,7 @@ public class Entity : MonoBehaviour
         
 
         //movement
-        rb.AddForce(velocity * Time.deltaTime,ForceMode.VelocityChange);
+        rb.velocity+= (velocity * Time.deltaTime);
 
 
 

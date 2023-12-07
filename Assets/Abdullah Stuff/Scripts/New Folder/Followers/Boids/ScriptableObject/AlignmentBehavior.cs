@@ -24,7 +24,7 @@ public class AlignmentBehavior : BoidsBehavior
         }
         //average all the position
         alignmentMove /= info.Count;
-
+        alignmentMove.y= 0;
         return alignmentMove;
 
 

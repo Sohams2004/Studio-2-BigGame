@@ -50,7 +50,7 @@ public class BoidsManager : MonoBehaviour
             Vector3 vector = Random.insideUnitSphere * spawnCircle * AgentDensity;
             vector.y = 0;
             Entity newEntity = Instantiate(entityPrefab, vector,
-                Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)), transform);
+            Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)), transform);
             newEntity.name = "Entity " + i;
             entities.Add(newEntity);
 
@@ -113,35 +113,13 @@ public class BoidsManager : MonoBehaviour
             {
                 if (t != entity.transform)
                 {
-                    Gizmos.color = Color.blue;
+                    Gizmos.color = new Color(0.25f, 0.72f, 0.069f, 0.4f);
                     Gizmos.DrawLine(entity.transform.position, t.position);
 
                 }
             }
 
         }
-
-        //foreach (Entity entity in entities)
-        //{
-
-        //    List<Transform> Newinfo = GetNearbyObjects(entity);
-        //    Vector3 move = behavior.calculateBehaviour(entity, Newinfo, this);
-        //    Gizmos.color = Color.red;
-
-        //    Gizmos.DrawRay(entity.gameObject.transform.position, move * 2);
-
-        //    foreach (Transform t in Newinfo)
-        //    {
-        //        if (t != entity.transform)
-        //        {
-        //            Gizmos.color = new Color(0.25f, 0.72f, 0.069f, 0.4f);
-        //            Gizmos.DrawLine(entity.transform.position, t.position);
-
-        //        }
-        //    }
-
-
-        //}
     }
 
 
