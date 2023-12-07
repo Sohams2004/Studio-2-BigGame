@@ -12862,6 +12862,10 @@ PrefabInstance:
       value: Orientation
       objectReference: {fileID: 0}
     - target: {fileID: 4135975132605318011, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 235034235}
+    - target: {fileID: 4135975132605318011, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 823582612}
@@ -12872,6 +12876,14 @@ PrefabInstance:
     - target: {fileID: 4135975132605318011, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: rotationSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513532882920939605, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513532882920939605, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5513532882920939605, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_Constraints
@@ -12887,7 +12899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513532882920939605, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_CollisionDetection
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: jumpForce
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: groundDrag
@@ -12898,12 +12914,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: gravityScale
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: playerHeight
       value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: Ground.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274289320910411019, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
+      propertyPath: movementSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6372671511767256323, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_IsActive
@@ -15792,7 +15816,7 @@ GameObject:
   - component: {fileID: 2131485724}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
