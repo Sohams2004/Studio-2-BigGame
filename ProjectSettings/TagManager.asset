@@ -15,6 +15,7 @@ TagManager:
   - Console
   - Coin
   - Ground
+  - Bot cam
   layers:
   - Default
   - TransparentFX
