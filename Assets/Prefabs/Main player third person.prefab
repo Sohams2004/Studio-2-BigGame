@@ -144,6 +144,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2110127100605211347, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 5513532882920939605}
+    - target: {fileID: 2110127100605211347, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: jumpForce
+      value: 16.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110127100605211347, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: gravityScale
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110127100605211347, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: movementSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5380848912127233939, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -51.87
@@ -280,6 +296,11 @@ MonoBehaviour:
   off: {fileID: 0}
   on: {fileID: 0}
   Console: {fileID: 0}
+--- !u!54 &5513532882920939605 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 494953405168211853, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+  m_PrefabInstance: {fileID: 5357715163507849176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6372671511767256323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1308906435726834395, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
@@ -298,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 7.31
-  consoleMask:
+  ground:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   pressEtext: {fileID: 0}

@@ -6,9 +6,12 @@ public class BotCamControl : MonoBehaviour
 {
     Vector3 direction;
 
-    [SerializeField] private float mouseSense;
+    [SerializeField] float mouseSense;
+    [SerializeField] float xRotation;
 
     [SerializeField] Transform bot;
+
+    [SerializeField] Camera cam;
 
 
     private void Start()
@@ -17,6 +20,7 @@ public class BotCamControl : MonoBehaviour
         Cursor.visible = false;
 
         bot = GetComponent<Transform>();
+        
         Application.targetFrameRate = 60;
     }
 
@@ -25,8 +29,10 @@ public class BotCamControl : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * mouseSense * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSense * Time.deltaTime;
 
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -30f, 30f);
         bot.Rotate(Vector3.up * mouseX);
-        bot.Rotate(Vector3.down * mouseY);
+        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
     }
 
     private void Update()
