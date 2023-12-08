@@ -9,7 +9,7 @@ public class Player_Movement : MonoBehaviour
     public float jumpHeight = 4.0f;
     public float jumpDuration = 0.5f;
 
-    [SerializeField] private Rigidbody2D playerRb;
+    [SerializeField] private Rigidbody playerRb;
 
     //[SerializeField] private bool jumpLimit = false;
 
