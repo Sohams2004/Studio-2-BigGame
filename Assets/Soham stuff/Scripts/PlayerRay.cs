@@ -9,14 +9,14 @@ public class PlayerRay : MonoBehaviour
 
     [SerializeField] LayerMask ground;
 
-    [SerializeField] TextMeshProUGUI pressEtext;
+    //[SerializeField] TextMeshProUGUI pressEtext;
 
     //[SerializeField] Material consoleHighlightMaterial;
 
 
     private void Start()
     {
-        pressEtext.enabled = false;
+        //pressEtext.enabled = false;
     }
 
     void DetectObjects()
@@ -24,13 +24,13 @@ public class PlayerRay : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitObject, rayLength, ground))
         {
             Debug.Log(hitObject.collider.gameObject.name);
-            pressEtext.enabled = true;
+            //pressEtext.enabled = true;
             //consoleHighlightMaterial.color = Color.red;
         }
 
         else
         {
-            pressEtext.enabled = false;
+            //pressEtext.enabled = false;
         }
     }
 
