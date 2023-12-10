@@ -25,4 +25,6 @@ public class Wait : State
         agent.SetDestination(transform.position);
     }
 
+
+
 }

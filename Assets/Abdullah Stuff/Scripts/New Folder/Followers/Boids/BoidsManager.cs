@@ -21,7 +21,7 @@ public class BoidsManager : MonoBehaviour
     public float maxSpeed = 5f;
     [Range(1f, 10f)]
     public float sensorRadius = 1.5f;
-    [Range(0f, 1f)]
+    [Range(0f, 3f)]
     public float avoidanceRadiusMultiplier = 0.5f;
 
     Color myColor;

@@ -24,14 +24,13 @@ public class SeperateBehavior : BoidsBehavior
                 seperateMove += (entity.transform.position - detectedEntity.position);
 
             }
-            seperateMove += detectedEntity.forward;
 
         }
 
-
-        //average all Close entity position
-        seperateMove /= avoidOthers;
-        seperateMove -= entity.transform.position;
+        if (avoidOthers > 0)
+        {
+            seperateMove /= avoidOthers;
+        }
 
         seperateMove.y = 0;
         return seperateMove;
