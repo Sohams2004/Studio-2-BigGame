@@ -18,6 +18,8 @@ public class CharagedAnimation : MonoBehaviour
 
     float newValue=0;
     float timer;
+    public float animationDelay = 0.02f;
+
     // Update is called once per frame
     private void Start()
     {
@@ -27,13 +29,12 @@ public class CharagedAnimation : MonoBehaviour
 
     void Update()
     {
-  
         timer-= Time.deltaTime;
-        if (timer < 0f) 
+        if (timer < animationDelay) 
         { 
 
-            timer = 0.1f;
-            newValue = Mathf.Lerp(newValue, consoleCharging.chargeCounter, 0.2f);
+            timer = 0.02f;
+            newValue = Mathf.Lerp(newValue, consoleCharging.chargeCounter, animationDelay);
 
         }
 

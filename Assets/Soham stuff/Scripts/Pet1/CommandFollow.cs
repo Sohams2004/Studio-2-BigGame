@@ -9,7 +9,7 @@ public class CommandFollow : State
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Camera camera;
 
-    [SerializeField] GameObject pingMarker;
+ //   [SerializeField] GameObject pingMarker;
 
     Ray cameraRay;
 
@@ -30,12 +30,12 @@ public class CommandFollow : State
         Debug.Log("Command followed");
         
          cameraRay = camera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity))
+        if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity,~8))
         {
             agent.stoppingDistance = 0.001f;
             agent.SetDestination(hitInfo.point);
 
-            Instantiate(pingMarker, hitInfo.point, Quaternion.identity);
+                //            Instantiate(pingMarker, hitInfo.point, Quaternion.identity);
         }
     }
 }
