@@ -29,7 +29,8 @@ public class CharagedAnimation : MonoBehaviour
 
     void Update()
     {
-        timer-= Time.deltaTime;
+        float currentAnimation = animator.GetFloat(paramatarName);
+        timer -= Time.deltaTime;
         if (timer < animationDelay) 
         { 
 

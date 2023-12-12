@@ -50,7 +50,7 @@ public class ConsoleCharging : MonoBehaviour
 
         if (number >= voltageNeeded)
         {
-            if (sendEvent=null)
+            if (sendEvent==null)
             {
                 isFull = true;
                 Debug.LogWarning("There is no Event to trigger");

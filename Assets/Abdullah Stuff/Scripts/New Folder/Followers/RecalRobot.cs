@@ -19,7 +19,7 @@ public class RecalRobot : MonoBehaviour
     {
         cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         Debug.Log("casting Ray");
-        Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity);
+        Physics.Raycast(cameraRay, out  RaycastHit  hitInfo, Mathf.Infinity,~8, QueryTriggerInteraction.Ignore);
         GameObject robot = hitInfo.transform.gameObject;
 
         if (robot.GetComponent<StateManager>() != null)
