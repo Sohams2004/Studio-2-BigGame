@@ -252,7 +252,8 @@ PrefabInstance:
       propertyPath: mouseSense
       value: 160
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6399233213082438024, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5380848912127233939, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 7.31
-  ground:
+  pressEtext: {fileID: 0}
+  consoleMask:
     serializedVersion: 2
     m_Bits: 0
-  pressEtext: {fileID: 0}
