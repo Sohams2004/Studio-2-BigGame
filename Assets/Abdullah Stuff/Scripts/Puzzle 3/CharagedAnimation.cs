@@ -19,6 +19,7 @@ public class CharagedAnimation : MonoBehaviour
     float newValue=0;
     float timer;
     public float animationDelay = 0.02f;
+    float currentValue=0;
 
     // Update is called once per frame
     private void Start()
@@ -32,11 +33,17 @@ public class CharagedAnimation : MonoBehaviour
         float currentAnimation = animator.GetFloat(paramatarName);
         timer -= Time.deltaTime;
         if (timer < animationDelay) 
-        { 
-
-            timer = 0.02f;
-            newValue = Mathf.Lerp(newValue, consoleCharging.chargeCounter, animationDelay);
-
+        {
+            timer = animationDelay;
+            currentValue = Mathf.Lerp(currentValue, consoleCharging.chargeCounter, animationDelay);
+            newValue = currentValue;
+        }
+        if (newValue > 0.99f)
+        {
+            newValue = 1f;
+        }
+         if (newValue < 0.01f) {
+            newValue = 0f;
         }
 
         switch (AnimationType)

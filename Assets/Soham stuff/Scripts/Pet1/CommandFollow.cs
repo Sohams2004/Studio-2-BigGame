@@ -28,8 +28,9 @@ public class CommandFollow : State
     public void Command()
     {
         Debug.Log("Command followed");
-        
-         cameraRay = camera.ScreenPointToRay(Input.mousePosition);
+        agent.enabled = true;
+
+        cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity,~8 ,QueryTriggerInteraction.Ignore))
         {
             agent.stoppingDistance = 0.001f;
