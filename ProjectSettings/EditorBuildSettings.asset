@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Ali Stuff/Level2.unity
     guid: e6ed22a1b1d3a964e8d49559ef2d905e
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 25969798e435cb24a93cabee2a07b800
+  - enabled: 1
     path: Assets/Abbas Stuff/Level 1 final.unity
     guid: f9e461b8bf7bcc943869c930ac5b8858
   m_configObjects: {}

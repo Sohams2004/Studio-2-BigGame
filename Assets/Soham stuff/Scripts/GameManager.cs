@@ -9,14 +9,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        pausePanel = GameObject.FindGameObjectWithTag("Pause Panel");
+        //pausePanel = GameObject.FindGameObjectWithTag("Pause Panel");
         Time.timeScale = 1.0f;
         pausePanel.SetActive(false);
     }
 
     void Pause()
     {
-        if(Input.GetKeyUp(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0f;
             pausePanel.SetActive(true);
