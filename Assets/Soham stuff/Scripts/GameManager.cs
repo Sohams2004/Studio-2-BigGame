@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject pausePanel;
+    [SerializeField] int pauseIndex;
 
     void Start()
     {
@@ -22,6 +23,15 @@ public class GameManager : MonoBehaviour
             pausePanel.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
+            pauseIndex++;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseIndex % 2 == 0)
+        {
+            Time.timeScale = 1f;
+            pausePanel.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 
@@ -31,6 +41,7 @@ public class GameManager : MonoBehaviour
         pausePanel.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        pauseIndex++;
     }
 
     public void Restart()
