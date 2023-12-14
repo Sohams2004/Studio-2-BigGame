@@ -25,7 +25,7 @@ public class ConsoleCharging : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Entered");
+        Debug.Log("Exit");
         if (other.GetComponent<BotVoltage>())
         {
             var currentRobot = other.GetComponent<BotVoltage>();
@@ -50,6 +50,12 @@ public class ConsoleCharging : MonoBehaviour
 
         if (number >= voltageNeeded)
         {
+            if (sendEvent==null)
+            {
+                isFull = true;
+                Debug.LogWarning("There is no Event to trigger");
+                return;
+            }
             sendEvent.Raise();
             isFull = true;
         }

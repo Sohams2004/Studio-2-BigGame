@@ -21,8 +21,9 @@ public class Wait : State
     void OnStay()
     {
         Debug.Log("Staying");
-        agent.enabled = true;
         agent.SetDestination(transform.position);
+        agent.enabled = false;
+
     }
 
 }

@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animation.meta
+guid: f50bab5d59b09864fa8f0fb2149851ef
+folderAsset: yes
+DefaultImporter:
+========
 guid: 5aa267af837b20741b7bd97dd2f0d433
 PrefabImporter:
+>>>>>>>> 0916523bebf8fa8845d5ed66c47c397e3adac627:Assets/Prefabs/Pause screen.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

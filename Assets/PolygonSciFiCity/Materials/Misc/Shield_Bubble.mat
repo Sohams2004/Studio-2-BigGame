@@ -12,10 +12,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _ALPHAPREMULTIPLY_ON
+  - _ALPHABLEND_ON
   - _EMISSION
   m_InvalidKeywords: []
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -76,16 +76,16 @@ Material:
     - _Glossiness: 0.908
     - _GlossyReflections: 1
     - _Metallic: 0.419
-    - _Mode: 3
+    - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 0.27889514, g: 0.47724396, b: 0.745283, a: 0.31764707}
-    - _EmissionColor: {r: 0.0024326092, g: 0.25576073, b: 0.38679248, a: 1}
-    - _SpecColor: {r: 0.44966292, g: 0.43809476, b: 0.53676474, a: 1}
+    - _EmissionColor: {r: 0, g: 0.25854436, b: 0.3301887, a: 1}
+    - _SpecColor: {r: 0.44966286, g: 0.43809474, b: 0.53676474, a: 1}
   m_BuildTextureStacks: []

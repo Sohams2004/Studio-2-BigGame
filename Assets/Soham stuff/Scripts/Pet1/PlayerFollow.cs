@@ -19,6 +19,8 @@ public class PlayerFollow : State
 
     void Follow_Player()
     {
+        agent.enabled = true;
+
         Debug.Log("Follow player");
         agent.stoppingDistance = followDistance;
         agent.SetDestination(player.transform.position);
