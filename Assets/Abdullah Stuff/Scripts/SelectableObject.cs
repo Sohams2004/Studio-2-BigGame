@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ public class SelectableObject : MonoBehaviour
 
     Ray cameraRay;
     [SerializeField] Camera camera;
-    public GameObject uiPressE;
+    public TextMeshProUGUI uiPressE;
 
     // Start is called before the first frame update
     void FixedUpdate()
@@ -27,14 +28,14 @@ public class SelectableObject : MonoBehaviour
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = null;
                 selectedObjectBody.sharedMaterials = mat;
-                uiPressE.SetActive(false);
+                uiPressE.enabled=false;
             }
             else if (gameObject.name == hitInfo.transform.gameObject.name)
             {
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = highlightMaterial;
                 selectedObjectBody.sharedMaterials = mat;
-                uiPressE.SetActive(true);
+                uiPressE.enabled = true;
 
 
             }
@@ -44,7 +45,8 @@ public class SelectableObject : MonoBehaviour
             var mat = selectedObjectBody.sharedMaterials;
             mat[1] = null;
             selectedObjectBody.sharedMaterials = mat;
-            uiPressE.SetActive(false);
+            uiPressE.enabled = false;
+
         }
 
     }
