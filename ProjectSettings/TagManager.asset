@@ -19,6 +19,7 @@ TagManager:
   - Pause Panel
   - Start Transition
   - End Transition
+  - Click Sound
   layers:
   - Default
   - TransparentFX

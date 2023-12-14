@@ -9,20 +9,12 @@ public class StartManager : MonoBehaviour
     [SerializeField] GameObject startTransition;
     [SerializeField] GameObject endTransition;
 
+    [SerializeField] AudioSource clickSound;
+
     private void Start()
     {
-       // startTransition = GameObject.FindGameObjectWithTag("Start Transition");
-       // endTransition = GameObject.FindGameObjectWithTag("End Transition");
+        clickSound = FindObjectOfType<AudioSource>();
     }
-
-    /*void StartGame()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.buildIndex+1);
-        }
-    }*/
 
     void QuitGame()
     {
@@ -37,12 +29,13 @@ public class StartManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Transitioned");
+            clickSound.Play();
             startTransition.SetActive(true);
             yield return new WaitForSeconds(1.5f);
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.buildIndex + 1);
             endTransition.SetActive(true);
-            startTransition.SetActive(false);      
+            startTransition.SetActive(false);                
         }
     }
 
