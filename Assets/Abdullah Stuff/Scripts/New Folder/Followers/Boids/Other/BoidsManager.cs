@@ -92,37 +92,6 @@ public class BoidsManager : MonoBehaviour
         return info;
     }
 
-    public void OnDrawGizmos()
-    {
-        Handles.color = new Color(1, 0, 0, 0.04f);
-        Handles.DrawSolidDisc(Vector3.zero, Vector3.up, 1 * spawnCircle * AgentDensity);
-        for (int i = 0; i < entities.Count; i++)
-        {
-            Handles.color = new Color(1, 1, 1, 0.04f);
-            Handles.DrawWireDisc(entities[i].transform.position, Vector3.up, sensorRadius, 2f);
-        }
-
-        foreach (Entity entity in entities)
-        {
-
-            List<Transform> Newinfo = GetNearbyObjects(entity);
-            Vector3 move = behavior.calculateBehaviour(entity, Newinfo, this,followTarget,avoidTarget);
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(entity.gameObject.transform.position, move * 2);
-
-
-            foreach (Transform t in Newinfo)
-            {
-                if (t != entity.transform)
-                {
-                    Gizmos.color = new Color(0.25f, 0.72f, 0.069f, 0.4f);
-                    Gizmos.DrawLine(entity.transform.position, t.position);
-
-                }
-            }
-
-        }
-    }
 
 
 
