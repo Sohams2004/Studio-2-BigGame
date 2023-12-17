@@ -5,9 +5,10 @@ using UnityEngine;
 public class ElectricVFX : MonoBehaviour
 {
     public Transform electricityEndPoint;
-    
+    AudioSource soundCharging;
     private void Start()
     {
+        soundCharging=GetComponent<AudioSource>();
     }
     private void OnTriggerStay(Collider other)
     {
@@ -18,7 +19,7 @@ public class ElectricVFX : MonoBehaviour
             other.GetComponent<LineRenderer>().enabled=true;
             other.GetComponent<LineRenderer>().SetPosition(0, electricityEndPoint.position);
             other.GetComponent<LineRenderer>().SetPosition(1, robotPos);
-
+            soundCharging.enabled=true;
         }
 
     }
@@ -27,6 +28,8 @@ public class ElectricVFX : MonoBehaviour
         if (other.tag == "ElectricBot")
         {
             other.GetComponent<LineRenderer>().enabled = false;
+            soundCharging.enabled = false;
+
         }
 
     }

@@ -12,10 +12,16 @@ public class SelectableObject : MonoBehaviour
 
     Ray cameraRay;
     [SerializeField] Camera camera;
-    public TextMeshProUGUI uiPressE;
+    public GameObject uiPressE;
 
+    private void Awake()
+    {
+
+        uiPressE= uiPressE.gameObject;
+
+    }
     // Start is called before the first frame update
-    void FixedUpdate()
+    void Update()
     {
         cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         Vector3 currentDistance = transform.position - player.transform.position ;
@@ -25,14 +31,14 @@ public class SelectableObject : MonoBehaviour
             Physics.Raycast(cameraRay, out RaycastHit hitInfo, 12 ,~8, QueryTriggerInteraction.Ignore);
             if (gameObject.name != hitInfo.transform.gameObject.name)
             {
-                uiPressE.enabled = false;
+                uiPressE.SetActive(false);
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = null;
                 selectedObjectBody.sharedMaterials = mat;
             }
             else if (gameObject.name == hitInfo.transform.gameObject.name)
             {
-                uiPressE.enabled = true;
+                uiPressE.SetActive(true);
 
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = highlightMaterial;
@@ -43,7 +49,7 @@ public class SelectableObject : MonoBehaviour
 
         }
         else {
-            uiPressE.enabled = false;
+            uiPressE.SetActive(false);
             var mat = selectedObjectBody.sharedMaterials;
             mat[1] = null;
             selectedObjectBody.sharedMaterials = mat;
