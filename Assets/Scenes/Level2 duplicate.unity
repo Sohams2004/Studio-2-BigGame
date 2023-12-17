@@ -583,6 +583,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!82 &46576403 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4097529244457150107, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 4161017336978679525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &58160320
 Mesh:
   m_ObjectHideFlags: 0
@@ -4627,6 +4632,40 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &691123063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 778061736436350974, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 4161017336978679525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &691123069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691123063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1543781575}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: ButtonSelectSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!43 &765612771
 Mesh:
   m_ObjectHideFlags: 0
@@ -5022,6 +5061,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887264537}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &895382663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8075478777706048968, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 4161017336978679525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &895382669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895382663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1543781575}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: ButtonSelectSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &905171344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10983,6 +11056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1509441469740337063}
   pauseIndex: 0
+  buttonSelectAudio: {fileID: 46576403}
 --- !u!1 &1550321275
 GameObject:
   m_ObjectHideFlags: 0
@@ -13523,7 +13597,7 @@ SpriteRenderer:
   m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!43 &1842965909
@@ -16282,6 +16356,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891327538}
     m_Modifications:
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1543781575}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonSelectSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462671814468204854, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Volume
+      value: 0.104
+      objectReference: {fileID: 0}
     - target: {fileID: 7979838285331807431, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_Name
       value: Pause screen
@@ -16336,15 +16430,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361525967749769210, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8361525967749769210, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8361525967749769210, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8361525967749769210, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16369,7 +16463,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 778061736436350974, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 691123069}
+    - targetCorrespondingSourceObject: {fileID: 8075478777706048968, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895382669}
   m_SourcePrefab: {fileID: 100100000, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
 --- !u!224 &5644916688127358234 stripped
 RectTransform:

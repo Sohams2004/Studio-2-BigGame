@@ -11466,6 +11466,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4623880327411890, guid: 38b38aed3140a8f4aac8bab6dace13da, type: 3}
   m_PrefabInstance: {fileID: 253069021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &254330658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 778061736436350974, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 406897055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &254330660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254330658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1075358153}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: ButtonSelectSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &261175213
 GameObject:
   m_ObjectHideFlags: 0
@@ -17386,6 +17420,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 839700106}
     m_Modifications:
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1075358153}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonSelectSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835008329781788585, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2095934496584083638, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -17497,7 +17547,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 778061736436350974, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 254330660}
+    - targetCorrespondingSourceObject: {fileID: 8075478777706048968, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 448241634}
   m_SourcePrefab: {fileID: 100100000, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
 --- !u!1 &411427768
 GameObject:
@@ -18946,6 +19002,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446042456}
   m_Mesh: {fileID: 4300000, guid: de815e9dc2d95a948939d83cfaa32a3d, type: 3}
+--- !u!1 &448241632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8075478777706048968, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 406897055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &448241634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448241632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1075358153}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: ButtonSelectSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &449048092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45585,6 +45675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1609099937}
   pauseIndex: 0
+  buttonSelectAudio: {fileID: 1703045564}
 --- !u!4 &1075358154
 Transform:
   m_ObjectHideFlags: 0
@@ -70265,6 +70356,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702370405}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1703045564 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4097529244457150107, guid: d27a85aa7050f91479a505eea34746ed, type: 3}
+  m_PrefabInstance: {fileID: 406897055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1704505619
 GameObject:
   m_ObjectHideFlags: 0
