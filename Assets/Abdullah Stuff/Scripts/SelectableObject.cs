@@ -25,27 +25,28 @@ public class SelectableObject : MonoBehaviour
             Physics.Raycast(cameraRay, out RaycastHit hitInfo, 12 ,~8, QueryTriggerInteraction.Ignore);
             if (gameObject.name != hitInfo.transform.gameObject.name)
             {
+                uiPressE.enabled = false;
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = null;
                 selectedObjectBody.sharedMaterials = mat;
-                uiPressE.enabled=false;
             }
             else if (gameObject.name == hitInfo.transform.gameObject.name)
             {
+                uiPressE.enabled = true;
+
                 var mat = selectedObjectBody.sharedMaterials;
                 mat[1] = highlightMaterial;
                 selectedObjectBody.sharedMaterials = mat;
-                uiPressE.enabled = true;
 
 
             }
 
         }
         else {
+            uiPressE.enabled = false;
             var mat = selectedObjectBody.sharedMaterials;
             mat[1] = null;
             selectedObjectBody.sharedMaterials = mat;
-            uiPressE.enabled = false;
 
         }
 

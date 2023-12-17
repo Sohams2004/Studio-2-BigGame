@@ -7,10 +7,11 @@ public class BoidsManager : MonoBehaviour
 {
     public Transform followTarget;
     public Transform[] avoidTarget;
-    public Entity entityPrefab;
+    public Entity[] entityPrefab;
+    
     List<Entity> entities = new List<Entity>();
     public BoidsBehavior behavior;
-    [Range(10f, 500f)]
+    [Range(1f, 100f)]
     public int startingCount = 100;
     [Range(10f, 500f)]
     public int spawnCircle= 250;
@@ -47,15 +48,25 @@ public class BoidsManager : MonoBehaviour
         squaresensorRadius = sensorRadius * sensorRadius;
         squareAvoidanceRadius = squaresensorRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
 
-        for (int i = 0; i < startingCount; i++)
+        for (int i = 0; i < startingCount;i=i)
         {
-            Vector3 vector = Random.insideUnitSphere * spawnCircle * AgentDensity;
-            vector.y = 0;
-            Entity newEntity = Instantiate(entityPrefab, vector,
-            Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)), transform);
-            newEntity.name = "Entity " + i;
-            entities.Add(newEntity);
+            Debug.Log("Enter1");
+            foreach (Entity entity in entityPrefab)
+            {
 
+                if (i >= startingCount)
+                {
+                    break;
+                }
+
+                Vector3 vector = Random.insideUnitSphere * spawnCircle * AgentDensity;
+                vector += gameObject.transform.position;
+                vector.y = 0;
+                Entity newEntity = Instantiate(entity, vector,Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)), transform);
+                newEntity.name = "Entity " + i;
+                entities.Add(newEntity);
+                ++i;
+            }
         }
     }
 
