@@ -160,6 +160,10 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5352335244242638535, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5380848912127233939, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -51.87
@@ -199,6 +203,10 @@ PrefabInstance:
     - target: {fileID: 5380848912127233939, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495351422516570161, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6961614106526244687, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
       propertyPath: field of view
@@ -252,8 +260,7 @@ PrefabInstance:
       propertyPath: mouseSense
       value: 160
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6399233213082438024, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5380848912127233939, guid: 650e69ae331dc854ab34bf4d1dd7ec5e, type: 3}
@@ -320,7 +327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 7.31
-  pressEtext: {fileID: 0}
   consoleMask:
     serializedVersion: 2
     m_Bits: 0

@@ -18,14 +18,13 @@ public class RecalRobot : MonoBehaviour
     private void FollowPlayer()
     {
         cameraRay = camera.ScreenPointToRay(Input.mousePosition);
-        Debug.Log("casting Ray");
-        Physics.Raycast(cameraRay, out RaycastHit hitInfo, Mathf.Infinity);
+        Physics.Raycast(cameraRay, out  RaycastHit  hitInfo, 12, ~8, QueryTriggerInteraction.Ignore);
         GameObject robot = hitInfo.transform.gameObject;
 
         if (robot.GetComponent<StateManager>() != null)
         {
             robot.GetComponent<StateManager>().botState = BotState.followPlayer;
-            robot.GetComponent<BoidsBehaviour>().enabled = true;
+            robot.GetComponent<BotBehaviour>().enabled = true;
         }
     }
 }

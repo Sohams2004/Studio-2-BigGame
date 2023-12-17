@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Abbas Stuff/Level 1.5v final.unity.meta
+guid: 0f21eebbf6abfa14389a9b2232410e7e
+========
 guid: 2fd488d05b526274c90df577c107417c
 folderAsset: yes
+>>>>>>>> 0916523bebf8fa8845d5ed66c47c397e3adac627:Assets/HDRPDefaultResources.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
