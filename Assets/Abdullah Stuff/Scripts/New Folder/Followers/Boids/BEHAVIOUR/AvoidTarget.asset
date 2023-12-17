@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AvoidTarget
   m_EditorClassIdentifier: 
   avoidMe: 1
-  avoidDistance: 10
+  avoidDistance: 12

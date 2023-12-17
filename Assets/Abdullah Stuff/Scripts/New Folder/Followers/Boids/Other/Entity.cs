@@ -25,7 +25,7 @@ public class Entity : MonoBehaviour
     public void Move(Vector3 velocity)
     {
         //facing direction;
-        transform.forward = Vector3.Lerp(transform.forward, velocity, Time.deltaTime);
+        transform.forward = Vector3.Lerp(transform.forward, velocity, Time.deltaTime*0.1f);
         
 
         //movement
