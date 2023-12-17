@@ -82026,7 +82026,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1114800656084530, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_Name
-      value: SM_Veh_Armored_Truck_02_Hover
+      value: Final Pet
       objectReference: {fileID: 0}
     - target: {fileID: 1114800656084530, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_TagString
@@ -82046,15 +82046,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -140.47
+      value: -16.72
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.28
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -61.3
+      value: 2.26
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -86263,15 +86263,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 69506854132119627, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -136.5
+      value: -12.14
       objectReference: {fileID: 0}
     - target: {fileID: 69506854132119627, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.51
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 69506854132119627, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -59.7
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 69506854132119627, guid: 6727a7a698813a649bb8dc431453b8ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -89075,6 +89075,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2101746619}
+  - {fileID: 1969190426}
   - {fileID: 1376845134}
   - {fileID: 645485903}
   - {fileID: 2108714616}
@@ -89099,6 +89100,5 @@ SceneRoots:
   - {fileID: 2050677094}
   - {fileID: 592153289}
   - {fileID: 1316570889}
-  - {fileID: 1969190426}
   - {fileID: 2044769197}
   - {fileID: 451489868}
