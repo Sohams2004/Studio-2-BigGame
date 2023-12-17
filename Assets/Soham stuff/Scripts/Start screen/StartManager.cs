@@ -10,10 +10,12 @@ public class StartManager : MonoBehaviour
     [SerializeField] GameObject endTransition;
 
     [SerializeField] AudioSource clickSound;
+    [SerializeField] AudioSource bgMusic;
 
     private void Start()
     {
         clickSound = FindObjectOfType<AudioSource>();
+        bgMusic.Play();
     }
 
     void QuitGame()
@@ -29,6 +31,7 @@ public class StartManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Transitioned");
+            bgMusic.mute = true;
             clickSound.Play();
             startTransition.SetActive(true);
             yield return new WaitForSeconds(1.5f);

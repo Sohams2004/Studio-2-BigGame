@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject pausePanel;
     [SerializeField] int pauseIndex;
+
+    [SerializeField] AudioSource buttonSelectAudio;
 
     void Start()
     {
@@ -55,6 +58,12 @@ public class GameManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void ButtonSelectSound()
+    {
+        Debug.Log("Beep");
+        buttonSelectAudio.Play();
     }
 
     private void Update()
