@@ -21,26 +21,26 @@ public class CollectableHolder : MonoBehaviour
                     collectableHolder[i] = null;
 
                 }
+
                 else 
                 { 
                 Debug.Log("I removed" + collectableHolder[i].name);
                     Destroy(collectableHolder[i]);
                     collectableHolder.RemoveAt(i);
                 }
+
             }
             if (collectableHolder[0] == null && collectableHolder.Count < 2)
             {
                 unlockDoor.SetActive(false);
+            
             }
 
 
         }
 
 
-
     }
-
-
 
 
 }

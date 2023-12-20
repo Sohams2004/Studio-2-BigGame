@@ -11,7 +11,6 @@ public class SwitchDoor : MonoBehaviour
 
     // Start is called before the first frame update
     // Update is called once per frame
-    bool opened;
     int counts;
         
    public void CountingButtons(int number)

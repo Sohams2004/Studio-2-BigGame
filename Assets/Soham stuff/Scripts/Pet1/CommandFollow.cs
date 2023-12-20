@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class CommandFollow : State
 {
-    PlayerFollow playerFollow;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Camera camera;
 
@@ -13,15 +12,8 @@ public class CommandFollow : State
 
     Ray cameraRay;
 
-    private void Awake()
-    {
-        playerFollow=GetComponent<PlayerFollow>();
-    }
     public override State RunState()
     {
-
-      
-
         return this;
     }
 
