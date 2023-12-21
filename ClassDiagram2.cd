@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameEvent">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgIAAAAAAAAAAAIAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\Scriptable Objects\GameEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameEventListenere">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAABAAAAAgAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\GameEventListenere.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Event" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleCharging">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAAAAAAAAAAAAAAAAAAAAIAJQQAACAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\Puzzle 3\ConsoleCharging.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sendEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Trigger">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\Puzzle 1\Trigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SwitchDoor">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAJAAAAAAAAAAAABgAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\Puzzle 2\SwitchDoor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

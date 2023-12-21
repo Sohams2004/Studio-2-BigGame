@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BotBehaviour">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\BotBehaviour.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="countRobots" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CountRobots">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\CountRobots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecalRobot">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\RecalRobot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SendRobot">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAACAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\SendRobot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="countRobots" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlignmentBehavior">
+    <Position X="12.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\ScriptableObject\AlignmentBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CohesionBehavior">
+    <Position X="10.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\ScriptableObject\CohesionBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FollowBehavior">
+    <Position X="6.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\ScriptableObject\FollowBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MixBehaviors">
+    <Position X="4.5" Y="6.5" Width="1.75" />
+    <InheritanceLine Type="BoidsBehavior" FixedToPoint="true">
+      <Path>
+        <Point X="11.125" Y="3.983" />
+        <Point X="11.125" Y="6.125" />
+        <Point X="5.74" Y="6.125" />
+        <Point X="5.74" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="boidsBehaviors" Type="BoidsBehavior" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.083" Y="6.5" />
+        <Point X="5.083" Y="3.366" />
+        <Point X="10.25" Y="3.366" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAIAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\ScriptableObject\MixBehaviors.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="boidsBehaviors" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SeperateBehavior">
+    <Position X="8.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\ScriptableObject\SeperateBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoidsManager">
+    <Position X="14.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQQACgAAAHAgAQSAAAAAQAgAAAAAAQABgAgAECAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\Other\BoidsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAIAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\New Folder\Followers\Boids\Other\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoidsBehavior">
+    <Position X="10.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\Scriptable Objects\BoidsBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

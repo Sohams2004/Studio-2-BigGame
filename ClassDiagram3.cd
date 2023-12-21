@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RobotAnimation">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACACAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Abdullah Stuff\Scripts\RobotAnimation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="stateManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StateManager">
+    <Position X="14.25" Y="6.5" Width="1.5" />
+    <AssociationLine Name="stateList" Type="State" FixedFromPoint="true">
+      <Path>
+        <Point X="14.438" Y="6.5" />
+        <Point X="14.438" Y="5.733" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAEQAAIAAAAAAAAAAAAAAAAAAAAABAAEA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\StateManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="botState" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="stateList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="State">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wait">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\Wait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandFollow">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAgAAAQAQAAAABAAAAAAAAABAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\CommandFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerFollow">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAQAAAAAAAAAAABACAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\PlayerFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BotState">
+    <Position X="16.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAAAEA=</HashCode>
+      <FileName>Assets\Soham stuff\Scripts\Pet1\BotState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
