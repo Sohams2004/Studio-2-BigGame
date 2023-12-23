@@ -19,7 +19,7 @@ public class BotMovement : MonoBehaviour
         float inputy = Input.GetAxis("Jump");
         float inputz = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(movementSpeed * inputx, 0, movementSpeed * inputz) * Time.deltaTime;
-        botRb.velocity = new(movement.x, 0, movement.z);
+        Vector3 movement = (transform.forward * inputz + transform.right * inputx) * movementSpeed * 100 * Time.deltaTime;
+        botRb.velocity = movement;
     }
 }

@@ -21650,7 +21650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSense: 160
   xRotation: 0
-  bot: {fileID: 0}
+  bot: {fileID: 505951703}
   cam: {fileID: 1806437455}
 --- !u!114 &505951698
 MonoBehaviour:
@@ -21664,7 +21664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4cdc282c444e414ba4fd53ef6d6ed18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 4.88
   botRb: {fileID: 505951699}
 --- !u!54 &505951699
 Rigidbody:
