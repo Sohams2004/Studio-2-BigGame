@@ -158,7 +158,8 @@ MonoBehaviour:
   - {fileID: 1198989173}
   - {fileID: 1794510528}
   - {fileID: 2104300713}
-  entityPrefab: {fileID: 1573028326661292633, guid: 3623df8d91e634a47b91a071d33787e7, type: 3}
+  entityPrefab:
+  - {fileID: 1573028326661292633, guid: 3623df8d91e634a47b91a071d33787e7, type: 3}
   behavior: {fileID: 11400000, guid: e1f3de31362253748a8d8368b1e6b98f, type: 2}
   startingCount: 100
   spawnCircle: 94
